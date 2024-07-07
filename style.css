@@ -1,3 +1,8 @@
 .pagina {
     background-color: #F3F5FC;
 }
+
+.pagina__caixadetexto {
+    background-color: #F3F5FC;
+    border: none;
+}
