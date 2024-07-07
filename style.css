@@ -5,4 +5,8 @@
 .pagina__caixadetexto {
     background-color: #F3F5FC;
     border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    
 }
