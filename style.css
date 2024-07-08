@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2E2E2;
+    padding: 2.2rem 5% 1rem;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-flow: column;
+    gap: 2.6rem;
+}
