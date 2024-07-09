@@ -1,11 +1,11 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0.125rem 0.125rem;
+    margin: 0.125rem 0.125rem;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #E2E2E2;
+    background-color: #F3F5FC;
     padding: 2.2rem 5% 1rem;
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -15,7 +15,7 @@ body {
 
 .principal {
     height: 100%;
-    flex: 1;
+    flex: auto;
 }
 
 /* Estilos do Principal Cabeçalho */
@@ -23,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: auto;
 }
 
 .principal_conteudo {
@@ -33,39 +34,40 @@ body {
 
 .principal_alerta {
     display: flex;
-    gap: 0.8rem;
-    color: #383E43;
-    font-size: 1.3rem;
+    gap: 0.4rem;
+    color: #495057;
+    font-weight: 400;
     padding: 1rem 0rem;
 }
 
-.principal_areadotexto {
-    border-radius: 1rem;
-    border: 0.2rem solid #02C171;
-    background-color: #050E0C;
-    box-shadow: 0px 0px 5px rgba(2, 193, 113, 0.5);
-    padding: 1.6rem;
-
-    flex-basis: 37rem;
+.paragrafo_alerta {
+    font-family: 'Inter', sans-serif;
+    font-weight: 0.75rem;
+    color: #495057;
+    font-weight: 400;
 }
 
 .principal_areadotexto :focus-within {
     outline: auto;
 }
 
-.principal_areadotexto_javascript {
+.principal_areadotexto {
+    flex-basis: 37rem;
+    padding: 1.6rem;
+    border-radius: 1rem;
     resize: none;
     width: 100%;
-    height: 95%;
+    height: 49rem;
     border: none;
     outline: none;
-    font-size: 1.6rem;
-    color: #2C39F9;
-    background-color: #FDFDFD;
-    padding-right: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #0A3871;
+    font-weight: 300;
+    background-color: #F3F5FC;
 }
 
-.principal_areadotexto_javascript::placeholder {
+.principal_areadotexto::placeholder {
     color: #2C39F9;
 }
 
@@ -78,21 +80,153 @@ body {
 
 .botao {
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 1.8rem 6%;
-
+    height: 4.19rem;
+    width: 20.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.6rem;
     flex: 1;
-
-    box-shadow: 0px 0px 5px rgba(2, 193, 113, 0.5);;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
 }
 
+.encriptar {
+    background-color: #0A3871;
+    border: 0.1rem solid #000;
+    color: #FFFFFF;
+}
 
+.encriptar:hover {
+    background-color: #1B24B0;
+}
+
+.descriptar:hover {
+    background-color: #f5f100;
+    color: #000000;
+}
+
+.descriptar {
+    background-color: #D8DFE8;
+    border: 0.1rem solid #000;
+    color: #000000;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.display_aside {
+    border-radius: 1rem;
+    background-color: #FDFDFD;
+    text-align: center;
+    padding-top: 2rem;
+    flex: 1;
+    width: 30rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aside_display_imagem {
+    width: 21rem;
+    height: 19rem;
+    margin-top: 45%;
+}
+
+.display_aside:hover {
+    border-color: #f5f100;
+}
+
+.display_aside_texto {
+    font-size: 1.8rem;
+    overflow-x: hidden;
+}
+
+.is-show-text {
+    text-align: left;
+    padding: 0rem 2rem;
+    white-space: pre-wrap;
+}
+
+.aside_imagem {
+    position: relative;
+    width: fit-content;
+    display: inline;
+}
+
+.aside_imagem::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 13rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.aside_mensagem {
+    padding: 0rem 5%;
+}
+
+.aside_mensagem_titulo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.aside_mensagem_paragrafo {
+    font-size: 1.6rem;
+    color: #383E43;
+}
+
+.principal_areadotexto::-webkit-scrollbar,
+.display_aside_texto::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.principal_areadotexto::-webkit-scrollbar-track,
+.display_aside_texto::-webkit-scrollbar-track {
+    background: #9598c6;
+    border-radius: 0.5rem;
+}
+
+.main__textarea::-webkit-scrollbar-thumb,
+.aside__display-text::-webkit-scrollbar-thumb {
+    background: #9598c6;
+    border-radius: 0.5rem;
+    border: 3px solid #9598c6;
+}
+
+
+@media screen and (min-width: 1020px) {
+    body {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 3.6rem;
+    }
+
+    .principal_imagem {
+        width: 5rem;
+    }
+
+    .principal_alerta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aside {
+        width: 34rem;
+    }
+}
