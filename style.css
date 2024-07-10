@@ -37,7 +37,7 @@ body {
     gap: 0.4rem;
     color: #495057;
     font-weight: 400;
-    padding: 1rem 0rem;
+    padding: 0rem 1rem;
 }
 
 .paragrafo_alerta {
@@ -45,7 +45,6 @@ body {
     font-weight: 0.75rem;
     color: #495057;
     font-weight: 400;
-    margin-top: 2%;
 }
 
 .principal_areadotexto :focus-within {
@@ -154,7 +153,9 @@ body {
 }
 
 .display_aside_texto {
-    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
     overflow-x: hidden;
     margin-top: 25%;
 }

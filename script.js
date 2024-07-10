@@ -12,7 +12,6 @@ function pasteElement() {
     display.classList.remove("is-show-text");
     display.appendChild(image);
     display.appendChild(message);
-
 }
 
 function displayText(text) {
@@ -78,7 +77,6 @@ function descryptText() {
         scrollPage(html.scrollHeight);
     }
 }
-
 
 function copyText() {
     const image = document.querySelector(".aside_imagem");
