@@ -7,6 +7,14 @@ const checkbox = document.querySelector(".js-checkbox");
 
 textArea.focus();
 
+function pasteElement() {
+    display.textContent = "";
+    display.classList.remove("is-show-text");
+    display.appendChild(image);
+    display.appendChild(message);
+
+}
+
 function displayText(text) {
     display.classList.add("is-show-text");
     display.textContent = text;
