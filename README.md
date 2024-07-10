@@ -1,14 +1,5 @@
 <h1 align="center">Challenge ONE - Decodificador de texto - Turma 7</h1>
 
-<p align="center">
-  <a href="#-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-design-do-decodificador-proposto-pelo-challenge">Design</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-design-feito-por-mim-no-figma">Meu Design</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-metodologias">Métodologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-referencias">Referências</a>
-</p>
-
 <p>
     O objetivo deste desafio era desenvolver um decodificador de texto com HTML, CSS e JavaScript, onde o usuário digita um texto, criptografa, visualiza o texto criptografado e depois consegue voltar o texto para o formato original.
 </p>
